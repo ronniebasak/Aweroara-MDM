@@ -1,0 +1,26 @@
+<head>
+	<!--style>
+	/*@keyframes sprite{
+				100% { background-position: 0 -9900px;}
+			} */
+		#sprite { width: 100px; height: 100px; display: block; background: url("img/sprites.png");/*animation: sprite 2s steps(99, end) infinite;*/ } 
+	</style-->
+</head>
+<body bgcolor="black">
+	<script>
+		x = 1
+		
+		window.onload = function(){
+			img = document.getElementById("sprite");
+			
+			setInterval(function()
+			{
+			x = x%99+1;
+			img.src = "img/anim/frame"+x+".png";
+			x++ }, 45 )
+			
+		}
+	</script>
+	
+	<img id="sprite" ></div>
+</body>
